@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АлматыСнабСтрой</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar__nav">
+                <div class="logo">
+                    <a href="/">
+                        <img src="./img/logo.png" alt="Логотип">
+                    </a>
+                </div>
+                <div class="working-hours">
+                    <span>График работы:</span><br>
+                    <span>Пн - Пт 09:00 - 18:00</span>
+                </div>
+                <div class="slogan">«Надёжные решения для инженерных систем!»</div>
+                <div class="contact-info">
+                    <span>Email: <a href="mailto:info@example.com">info@example.com</a></span><br>
+                    <span>Тел: <a href="tel:+71234567890">+7 (123) 456-78-90</a></span>
+                </div>
+                <button class="nav-button" onclick="openModal()">Обратная связь</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li class="dropdown catalog-toggle">
+                    <a href="#">
+                        <span class="burger">&#9776;</span>
+                        <span class="catalog-text">Каталог</span>
+                        <span class="arrow">&#9650;</span>
+                    </a>
+                    <ul class="dropdown-content">
+                        <li class="sub-dropdown">
+                            <a href="#">
+                                <span class="icon"><img src="./img/pipe.svg" alt=""></span>
+                                Трубы полиэтиленовые ПЭ, ПНД, фитинги
+                            </a>
+                            <ul class="sub-sub" style="display: none;">
+                                <li><a href="#">Тип 1</a></li>
+                                <li><a href="#">Тип 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Трубы полиэтиленовые ПЭ, ПНД, фитинги</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Трубы ППУ, фитинги ППУ</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Трубы канализационные, фитинги</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Трубы полипропиленовые напорные PP-R и фитинги</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Запорная арматура и электроприводы</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Детали трубопроводов стальные, гибкие вставки, компенсаторы</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Регулирующая, предохранительная арматура</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Фильтры и грязевики</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Люки и дождеприемники</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Пожарное оборудование</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Теплоизоляция, уплотнения, защитные покрытия</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Измерительные приборы</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Электроды и отрезные диски</a></li>
+                        <li><a href="#"><span class="icon"><img src="./img/pipe.svg" alt=""></span>Крепёж</a></li>
+                        <!-- Добавь остальные пункты аналогично -->
+                    </ul>
+                </li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Бонусная программа</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Карусель -->
+    <div class="container">
+        <div class="carousel">
+            <div class="slides" id="slideContainer">
+                <img src="./img/banner1.jpeg" class="slide">
+                <img src="./img/banner2.jpg" class="slide">
+                <img src="./img/banner3.jpg" class="slide">
+            </div>
+            <div class="carousel-nav">
+                <button class="prev" onclick="changeSlide(-1)">
+                  <img src="./img/arrow2.png" alt="" style="transform: rotate(180deg);" />
+                </button>
+                <button class="next" onclick="changeSlide(1)">
+                  <img src="./img/arrow2.png" alt="" />
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <!-- Преимущества -->
+     <div class="container">
+        <div class="advantages">
+            <div class="advantage"><span class="icon"><img src="./img/Background1.svg" alt=""></span><p class="advertising-headline">Подарочные сертификаты</p></div>
+            <div class="advantage"><span class="icon"><img src="./img/Background2.svg" alt=""></span><p class="advertising-headline">Весь товар сертифицирован</p></div>
+            <div class="advantage"><span class="icon"><img src="./img/Background3.svg" alt=""></span><p class="advertising-headline">30 дней на обмен и возврат</p></div>
+            <div class="advantage"><span class="icon"><img src="./img/Background4.svg" alt=""></span><p class="advertising-headline">Удобная и быстрая доставка</p></div>
+        </div>
+     </div>
+
+    <!-- О компании -->
+    <section class="about">
+        <div class="container">
+            <h2>О компании</h2>
+        <p>Наша компания специализируется на продаже инженерной сантехники, предоставляя клиентам надёжные и современные решения для систем водоснабжения, отопления и канализации.</p>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./img/logo.png" alt="Логотип">
+            </div>
+            <div class="footer-contacts">
+                <div class="footer-item">
+                    <a href="https://wa.me/71234567890" target="_blank">
+                        <img src="./img/whatsapp.svg" alt="WhatsApp">
+                        +7 (123) 456-78-90
+                    </a>
+                    </div>
+
+                    <div class="footer-item">
+                    <a href="https://t.me/example" target="_blank">
+                        <img src="./img/telegram.svg" alt="Telegram">
+                        @example
+                    </a>
+                    </div>
+
+                    <div class="footer-item">
+                    <a href="mailto:info@example.com">
+                        <img src="./img/email.svg" alt="Email">
+                        info@example.com
+                    </a>
+                    </div>
+
+                    <div class="footer-item">
+                    <a href="https://maps.google.com/?q=Алматы, Примерная 1" target="_blank">
+                        <img src="./img/address.svg" alt="Адрес">
+                        г. Алматы, ул. Примерная, д. 1
+                    </a>
+                    </div>
+            </div>
+            </div>
+            <div class="footer-bottom">
+            <p class="legal">Информация о товарах, услугах и ценах, предоставленная на сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями (статья Республики Казахстан).</p>
+            <p class="credits">Дизайн и разработка: <a href="https://www.behance.net/litvinov" target="_blank">https://www.behance.net/litvinov</a></p>
+            </div>
+        </div>
+        </footer>
+
+
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content" onclick="event.stopPropagation()">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Оставьте заявку</h2>
+          <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Телефон" required>
+            <textarea placeholder="Сообщение" required></textarea>
+            <button class="form-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+
+        <script src="./script.js"></script>
+</body>
+</html>
