@@ -236,46 +236,136 @@
   </div>
 </nav>
 
-    
+   <!-- Заголовок страницы в едином стиле -->
+<section class="page-title">
+  <div class="container">
+    <h1 class="modern-title">Вакансии</h1>
+    <p class="modern-subtitle">
+      Станьте частью команды «АлматыСнабСтрой» — стабильной и развивающейся компании!
+    </p>
+  </div>
+</section>
 
-    <!-- Карусель -->
-    <div class="container">
-        <div class="carousel">
-            <div class="slides" id="slideContainer">
-                <img src="./img/banner1.jpeg" class="slide">
-                <img src="./img/banner2.jpg" class="slide">
-                <img src="./img/banner3.jpg" class="slide">
-            </div>
-            <div class="carousel-nav">
-                <button class="prev" onclick="changeSlide(-1)">
-                  <img src="./img/arrow2.png" alt="" style="transform: rotate(180deg);" />
-                </button>
-                <button class="next" onclick="changeSlide(1)">
-                  <img src="./img/arrow2.png" alt="" />
-                </button>
-              </div>
-        </div>
+<section class="vacancy-section">
+  <div class="container">
+
+    <!-- Панель: количество позиций / подсказка по отклику -->
+    <div class="vacancy-toolbar" aria-label="Панель вакансий">
+      <span class="vacancy-count">Открытых позиций: 2</span>
+      <span class="vacancy-help">Отправьте резюме на <a href="mailto:info@example.com">info@example.com</a> или позвоните <a href="tel:+71234567890">+7 (123) 456‑78‑90</a></span>
     </div>
 
-    <!-- Преимущества -->
-     <div class="container">
-        <div class="advantages">
-            <div class="advantage"><span class="icon"><img src="./img/Background1.svg" alt=""></span><p class="advertising-headline">Подарочные сертификаты</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background2.svg" alt=""></span><p class="advertising-headline">Весь товар сертифицирован</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background3.svg" alt=""></span><p class="advertising-headline">30 дней на обмен и возврат</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background4.svg" alt=""></span><p class="advertising-headline">Удобная и быстрая доставка</p></div>
-        </div>
-     </div>
+    <div class="vacancy-grid">
 
-    <!-- О компании -->
-    <section class="about">
-        <div class="container">
-            <h2>О компании</h2>
-        <p>Наша компания специализируется на продаже инженерной сантехники, предоставляя клиентам надёжные и современные решения для систем водоснабжения, отопления и канализации.</p>
-        </div>
-    </section>
+      <!-- Вакансия 1 -->
+      <article class="vacancy-card" aria-labelledby="vacancy-title-1">
+        <header class="vacancy-card__header">
+          <div class="vacancy-card__icon" aria-hidden="true">👔</div>
+          <div class="vacancy-card__headings">
+            <h2 id="vacancy-title-1" class="vacancy-card__title">Менеджер по продажам</h2>
+            <ul class="vacancy-meta" aria-label="Параметры вакансии">
+              <li>Алматы</li>
+              <li>Полная занятость</li>
+              <li>Офис / Гибрид</li>
+            </ul>
+          </div>
+          <span class="vacancy-badge">Открыта</span>
+        </header>
 
-    <!-- Футер -->
+        <div class="vacancy-card__body">
+          <div class="vacancy-salary">от 400 000 ₸ + бонусы</div>
+
+          <details open>
+            <summary>Обязанности</summary>
+            <ul class="modern-list">
+              <li>Консультирование клиентов</li>
+              <li>Работа с заказами и документами</li>
+              <li>Ведение клиентской базы</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Требования</summary>
+            <ul class="modern-list">
+              <li>Опыт в продажах (желательно в инженерной сфере)</li>
+              <li>Коммуникабельность, ответственность</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Мы предлагаем</summary>
+            <ul class="modern-list">
+              <li>Официальное оформление</li>
+              <li>Стабильная зарплата + KPI</li>
+              <li>Корпоративное обучение</li>
+            </ul>
+          </details>
+        </div>
+
+        <footer class="vacancy-card__footer">
+          <a class="btn btn-primary" href="mailto:info@example.com?subject=Отклик — Менеджер по продажам">Откликнуться</a>
+          <a class="btn btn-ghost" href="tel:+71234567890">Позвонить</a>
+        </footer>
+      </article>
+
+      <!-- Вакансия 2 -->
+      <article class="vacancy-card" aria-labelledby="vacancy-title-2">
+        <header class="vacancy-card__header">
+          <div class="vacancy-card__icon" aria-hidden="true">📦</div>
+          <div class="vacancy-card__headings">
+            <h2 id="vacancy-title-2" class="vacancy-card__title">Кладовщик</h2>
+            <ul class="vacancy-meta" aria-label="Параметры вакансии">
+              <li>Алматы</li>
+              <li>Полная занятость</li>
+              <li>Склад</li>
+            </ul>
+          </div>
+          <span class="vacancy-badge">Открыта</span>
+        </header>
+
+        <div class="vacancy-card__body">
+          <div class="vacancy-salary">договорная</div>
+
+          <details open>
+            <summary>Обязанности</summary>
+            <ul class="modern-list">
+              <li>Учёт и выдача товаров</li>
+              <li>Поддержание порядка на складе</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Требования</summary>
+            <ul class="modern-list">
+              <li>Опыт от 1 года</li>
+              <li>Внимательность, пунктуальность</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Мы предлагаем</summary>
+            <ul class="modern-list">
+              <li>Стабильный график</li>
+              <li>Скидки на продукцию</li>
+              <li>Дружный коллектив</li>
+            </ul>
+          </details>
+        </div>
+
+        <footer class="vacancy-card__footer">
+          <a class="btn btn-primary" href="mailto:info@example.com?subject=Отклик — Кладовщик">Откликнуться</a>
+          <a class="btn btn-ghost" href="tel:+71234567890">Позвонить</a>
+        </footer>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Подвал -->
+
     <footer class="custom-footer">
         <div class="container">
             <div class="footer-content">
@@ -335,7 +425,7 @@
         </div>
       </div>
 
+      <script src="./script.js"></script>
 
-        <script src="./script.js"></script>
-</body>
+      </body>
 </html>

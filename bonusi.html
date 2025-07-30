@@ -236,46 +236,63 @@
   </div>
 </nav>
 
-    
 
-    <!-- Карусель -->
-    <div class="container">
-        <div class="carousel">
-            <div class="slides" id="slideContainer">
-                <img src="./img/banner1.jpeg" class="slide">
-                <img src="./img/banner2.jpg" class="slide">
-                <img src="./img/banner3.jpg" class="slide">
-            </div>
-            <div class="carousel-nav">
-                <button class="prev" onclick="changeSlide(-1)">
-                  <img src="./img/arrow2.png" alt="" style="transform: rotate(180deg);" />
-                </button>
-                <button class="next" onclick="changeSlide(1)">
-                  <img src="./img/arrow2.png" alt="" />
-                </button>
-              </div>
-        </div>
+    <!-- Заголовок страницы -->
+<section class="page-title">
+  <div class="container">
+    <h1 class="modern-title">Бонусная программа</h1>
+    <p class="modern-subtitle">Покупайте чаще — экономьте больше! 1 бонус = 1 тенге. Оплачивайте бонусами до 50% заказа.</p>
+  </div>
+</section>
+
+<!-- Блок бонусов в стиле modern-cards -->
+<section class="modern-services bonus-modern">
+  <div class="container">
+    <div class="modern-service-grid">
+
+      <!-- Карточка 1 -->
+      <div class="modern-service-card">
+        <div class="modern-icon" aria-hidden="true">🎁</div>
+        <h3>Как это работает?</h3>
+        <ul class="modern-list">
+          <li>Оформите первую покупку или зарегистрируйтесь</li>
+          <li>Получайте бонусные баллы за каждый заказ</li>
+          <li>Оплачивайте бонусами до 50% следующей покупки</li>
+        </ul>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="modern-service-card">
+        <div class="modern-icon" aria-hidden="true">✅</div>
+        <h3>Преимущества</h3>
+        <ul class="modern-list">
+          <li>1 бонус = 1 тенге</li>
+          <li>Эксклюзивные акции только для участников</li>
+          <li>Бонусы сохраняются до 12 месяцев</li>
+        </ul>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="modern-service-card">
+        <div class="modern-icon" aria-hidden="true">📱</div>
+        <h3>Как узнать баланс?</h3>
+        <p>Бонусный баланс виден в личном кабинете или уточняется у менеджера при оформлении заказа.</p>
+      </div>
+
+      <!-- Карточка 4 -->
+      <div class="modern-service-card">
+        <div class="modern-icon" aria-hidden="true">🎫</div>
+        <h3>Как потратить?</h3>
+        <p>Используйте бонусы онлайн или через менеджера. Максимум — до 50% суммы заказа.</p>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <!-- Преимущества -->
-     <div class="container">
-        <div class="advantages">
-            <div class="advantage"><span class="icon"><img src="./img/Background1.svg" alt=""></span><p class="advertising-headline">Подарочные сертификаты</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background2.svg" alt=""></span><p class="advertising-headline">Весь товар сертифицирован</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background3.svg" alt=""></span><p class="advertising-headline">30 дней на обмен и возврат</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background4.svg" alt=""></span><p class="advertising-headline">Удобная и быстрая доставка</p></div>
-        </div>
-     </div>
 
-    <!-- О компании -->
-    <section class="about">
-        <div class="container">
-            <h2>О компании</h2>
-        <p>Наша компания специализируется на продаже инженерной сантехники, предоставляя клиентам надёжные и современные решения для систем водоснабжения, отопления и канализации.</p>
-        </div>
-    </section>
+    <!-- Подвал -->
 
-    <!-- Футер -->
     <footer class="custom-footer">
         <div class="container">
             <div class="footer-content">
@@ -335,7 +352,7 @@
         </div>
       </div>
 
+      <script src="./script.js"></script>
 
-        <script src="./script.js"></script>
-</body>
+      </body>
 </html>

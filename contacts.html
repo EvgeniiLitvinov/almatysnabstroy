@@ -236,46 +236,105 @@
   </div>
 </nav>
 
-    
+     <!-- Заголовок страницы в едином стиле -->
+<section class="page-title">
+  <div class="container">
+    <h1 class="modern-title">Контакты</h1>
+    <p class="modern-subtitle">Свяжитесь с нами удобным способом — ответим быстро.</p>
+  </div>
+</section>
 
-    <!-- Карусель -->
-    <div class="container">
-        <div class="carousel">
-            <div class="slides" id="slideContainer">
-                <img src="./img/banner1.jpeg" class="slide">
-                <img src="./img/banner2.jpg" class="slide">
-                <img src="./img/banner3.jpg" class="slide">
-            </div>
-            <div class="carousel-nav">
-                <button class="prev" onclick="changeSlide(-1)">
-                  <img src="./img/arrow2.png" alt="" style="transform: rotate(180deg);" />
-                </button>
-                <button class="next" onclick="changeSlide(1)">
-                  <img src="./img/arrow2.png" alt="" />
-                </button>
-              </div>
-        </div>
+<section class="contact-section">
+  <div class="container">
+
+    <!-- Сетка карточек контактов в едином стиле -->
+    <div class="modern-service-grid contact-grid">
+
+      <article class="modern-service-card contact-card" aria-labelledby="c-addr">
+        <div class="modern-icon" aria-hidden="true">📍</div>
+        <h2 id="c-addr" class="contact-card__title">Адрес</h2>
+        <p>г. Алматы, ул. Примерная, д. 1</p>
+      </article>
+
+      <article class="modern-service-card contact-card" aria-labelledby="c-phone">
+        <div class="modern-icon" aria-hidden="true">📞</div>
+        <h2 id="c-phone" class="contact-card__title">Телефон</h2>
+        <p><a href="tel:+71234567890">+7 (123) 456‑78‑90</a></p>
+        <p class="contact-hint">Звонки: Пн–Пт, 09:00–18:00</p>
+      </article>
+
+      <article class="modern-service-card contact-card" aria-labelledby="c-mail">
+        <div class="modern-icon" aria-hidden="true">📧</div>
+        <h2 id="c-mail" class="contact-card__title">Email</h2>
+        <p><a href="mailto:info@example.com">info@example.com</a></p>
+        <p class="contact-hint">Пишете по заявке? Укажите номер заказа.</p>
+      </article>
+
+      <article class="modern-service-card contact-card" aria-labelledby="c-time">
+        <div class="modern-icon" aria-hidden="true">⏰</div>
+        <h2 id="c-time" class="contact-card__title">Время работы</h2>
+        <p>Пн – Пт: 09:00 – 18:00</p>
+      </article>
+
     </div>
 
-    <!-- Преимущества -->
-     <div class="container">
-        <div class="advantages">
-            <div class="advantage"><span class="icon"><img src="./img/Background1.svg" alt=""></span><p class="advertising-headline">Подарочные сертификаты</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background2.svg" alt=""></span><p class="advertising-headline">Весь товар сертифицирован</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background3.svg" alt=""></span><p class="advertising-headline">30 дней на обмен и возврат</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background4.svg" alt=""></span><p class="advertising-headline">Удобная и быстрая доставка</p></div>
-        </div>
-     </div>
+    <!-- Карта в карточке -->
+    <div class="modern-service-card map-card" aria-labelledby="map-title">
+      <div class="map-card__head">
+        <div class="modern-icon" aria-hidden="true">🗺️</div>
+        <h3 id="map-title">Мы на карте</h3>
+      </div>
+      <div class="map-ratio">
+        <iframe
+          src="https://maps.google.com/maps?q=43.271122933311624, 76.86656031272443 (АлматыСнабСтрой)&z=16&output=embed"
+          title="Карта: АлматыСнабСтрой"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
 
-    <!-- О компании -->
-    <section class="about">
-        <div class="container">
-            <h2>О компании</h2>
-        <p>Наша компания специализируется на продаже инженерной сантехники, предоставляя клиентам надёжные и современные решения для систем водоснабжения, отопления и канализации.</p>
-        </div>
-    </section>
+    <!-- Форма обратной связи -->
+    <div class="modern-service-card feedback-card">
+      <h3>Напишите нам</h3>
 
-    <!-- Футер -->
+      <form class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name" class="visually-hidden">Ваше имя</label>
+            <input id="name" name="name" type="text" placeholder="Ваше имя" autocomplete="name" required />
+          </div>
+
+          <div class="form-field">
+            <label for="phone" class="visually-hidden">Телефон</label>
+            <input id="phone" name="tel" type="tel" placeholder="Телефон" autocomplete="tel" required />
+          </div>
+
+          <div class="form-field">
+            <label for="email" class="visually-hidden">Email (необязательно)</label>
+            <input id="email" name="email" type="email" placeholder="Email (необязательно)" autocomplete="email" />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="message" class="visually-hidden">Сообщение</label>
+          <textarea id="message" name="message" placeholder="Сообщение" required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-lg">Отправить</button>
+          <p class="form-note">Нажимая «Отправить», вы соглашаетесь с обработкой данных.</p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Подвал -->
+
     <footer class="custom-footer">
         <div class="container">
             <div class="footer-content">
@@ -335,7 +394,7 @@
         </div>
       </div>
 
+      <script src="./script.js"></script>
 
-        <script src="./script.js"></script>
-</body>
+      </body>
 </html>

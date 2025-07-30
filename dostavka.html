@@ -236,46 +236,104 @@
   </div>
 </nav>
 
-    
+     <!-- Заголовок страницы в едином стиле -->
+<section class="page-title">
+  <div class="container">
+    <h1 class="modern-title">Доставка</h1>
+    <p class="modern-subtitle">
+      Оперативно и надёжно доставляем продукцию по Алматы и регионам Казахстана.
+    </p>
+  </div>
+</section>
 
-    <!-- Карусель -->
-    <div class="container">
-        <div class="carousel">
-            <div class="slides" id="slideContainer">
-                <img src="./img/banner1.jpeg" class="slide">
-                <img src="./img/banner2.jpg" class="slide">
-                <img src="./img/banner3.jpg" class="slide">
-            </div>
-            <div class="carousel-nav">
-                <button class="prev" onclick="changeSlide(-1)">
-                  <img src="./img/arrow2.png" alt="" style="transform: rotate(180deg);" />
-                </button>
-                <button class="next" onclick="changeSlide(1)">
-                  <img src="./img/arrow2.png" alt="" />
-                </button>
-              </div>
-        </div>
+<section class="delivery-section">
+  <div class="container">
+
+    <!-- Инфо-строка -->
+    <div class="delivery-note" role="note">
+      <strong>Бесплатно от 100 000 ₸</strong> по Алматы. Стандартный срок — <strong>1–2 рабочих дня</strong>.
     </div>
 
-    <!-- Преимущества -->
-     <div class="container">
-        <div class="advantages">
-            <div class="advantage"><span class="icon"><img src="./img/Background1.svg" alt=""></span><p class="advertising-headline">Подарочные сертификаты</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background2.svg" alt=""></span><p class="advertising-headline">Весь товар сертифицирован</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background3.svg" alt=""></span><p class="advertising-headline">30 дней на обмен и возврат</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background4.svg" alt=""></span><p class="advertising-headline">Удобная и быстрая доставка</p></div>
-        </div>
-     </div>
+    <!-- Чипсы-навигация (подсказка зон) -->
+    <div class="delivery-toolbar" aria-label="Варианты доставки">
+      <ul class="delivery-chips">
+        <li class="chip is-active">Алматы</li>
+        <li class="chip">Регионы РК</li>
+      </ul>
+      <div class="delivery-help">
+        Вопросы? <a href="tel:+71234567890">+7 (123) 456‑78‑90</a> · <a href="mailto:info@example.com">info@example.com</a>
+      </div>
+    </div>
 
-    <!-- О компании -->
-    <section class="about">
-        <div class="container">
-            <h2>О компании</h2>
-        <p>Наша компания специализируется на продаже инженерной сантехники, предоставляя клиентам надёжные и современные решения для систем водоснабжения, отопления и канализации.</p>
-        </div>
-    </section>
+    <!-- Карточки разделов в едином стиле -->
+    <div class="modern-service-grid delivery-grid">
 
-    <!-- Футер -->
+      <!-- Алматы -->
+      <div class="modern-service-card delivery-card">
+        <div class="modern-icon" aria-hidden="true">🚚</div>
+        <h3>Условия доставки по Алматы</h3>
+        <ul class="modern-list">
+          <li>Доставка в течение 1–2 рабочих дней после оформления заказа.</li>
+          <li><strong class="delivery-badge">Бесплатно от 100 000 ₸</strong></li>
+          <li>При меньшей сумме — стоимость сообщит менеджер.</li>
+        </ul>
+
+        <details class="delivery-details" open>
+          <summary>Зоны и сроки</summary>
+          <p>В центральных районах обычно доставляем день‑в‑день или на следующий рабочий. В отдалённые — по согласованию.</p>
+        </details>
+      </div>
+
+      <!-- Регионы -->
+      <div class="modern-service-card delivery-card">
+        <div class="modern-icon" aria-hidden="true">🧭</div>
+        <h3>Доставка по регионам</h3>
+        <ul class="modern-list">
+          <li>Отправка транспортными компаниями по согласованию.</li>
+          <li>Работаем с PEK, СДЭК, KIT и др.</li>
+          <li>Срок зависит от удалённости региона.</li>
+        </ul>
+        <details class="delivery-details">
+          <summary>Оценка сроков и стоимости</summary>
+          <p>Менеджер подскажет оптимального перевозчика и ориентировочную стоимость/срок доставки до вашего города.</p>
+        </details>
+      </div>
+
+      <!-- Самовывоз -->
+      <div class="modern-service-card delivery-card">
+        <div class="modern-icon" aria-hidden="true">🏷️</div>
+        <h3>Самовывоз</h3>
+        <p>Можно забрать товар со склада в Алматы. Адрес и график работы уточняйте у менеджера.</p>
+        <details class="delivery-details">
+          <summary>Подготовка заказа</summary>
+          <p>Соберём и подготовим заказ к вашему приезду — это ускорит выдачу и снизит время ожидания.</p>
+        </details>
+      </div>
+
+      <!-- Доп. информация -->
+      <div class="modern-service-card delivery-card">
+        <div class="modern-icon" aria-hidden="true">📦</div>
+        <h3>Дополнительная информация</h3>
+        <ul class="modern-list">
+          <li>Надёжная упаковка и маркировка.</li>
+          <li>При получении проверьте комплектность и целостность.</li>
+          <li>При повреждениях составьте акт с перевозчиком и сообщите нам.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- CTA-панель -->
+    <div class="delivery-cta delivery-cta--center">
+        <a class="btn btn-primary btn-lg" href="tel:+71234567890">Связаться с менеджером</a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Подвал -->
+
     <footer class="custom-footer">
         <div class="container">
             <div class="footer-content">
@@ -335,7 +393,7 @@
         </div>
       </div>
 
+      <script src="./script.js"></script>
 
-        <script src="./script.js"></script>
-</body>
+      </body>
 </html>
