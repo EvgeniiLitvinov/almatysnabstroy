@@ -60,7 +60,7 @@
 
                 <!-- Подменю 3-го уровня -->
                 <ul class="sub-sub" role="menu" aria-label="Тип 1">
-                  <li role="none"><a href="product.html" role="menuitem">Трубы полиэтиленовые ПЭ 100 SDR 17</a></li>
+                  <li role="none"><a href="#" role="menuitem">Трубы полиэтиленовые ПЭ 100 SDR 17</a></li>
                   <li role="none"><a href="#" role="menuitem">Трубы полиэтиленовые ПЭ 100 SDR 11</a></li>
                 </ul>
               </li>
@@ -236,46 +236,44 @@
   </div>
 </nav>
 
-    
 
-    <!-- Карусель -->
-    <div class="container">
-        <div class="carousel">
-            <div class="slides" id="slideContainer">
-                <img src="./img/banner1.jpeg" class="slide">
-                <img src="./img/banner2.jpg" class="slide">
-                <img src="./img/banner3.jpg" class="slide">
-            </div>
-            <div class="carousel-nav">
-                <button class="prev" onclick="changeSlide(-1)">
-                  <img src="./img/arrow2.png" alt="" style="transform: rotate(180deg);" />
-                </button>
-                <button class="next" onclick="changeSlide(1)">
-                  <img src="./img/arrow2.png" alt="" />
-                </button>
-              </div>
+<!--- СОДЕРЖАНИЕ --->
+
+
+<section class="product-section">
+    <div class="product-grid">
+      <!-- Фото -->
+      <div class="product-image">
+        <img src="./img/труба.jpg" alt="Трубы полиэтиленовые ПЭ 100 SDR 17">
+      </div>
+
+      <!-- Описание -->
+      <div class="product-info">
+        <h1>Трубы полиэтиленовые ПЭ 100 SDR 17</h1>
+        <p>
+          Трубы ПЭ 100 SDR 17 предназначены для систем холодного водоснабжения,
+          канализации и газопроводов. Они изготавливаются из полиэтилена высокой плотности,
+          обладают высокой прочностью, устойчивы к коррозии и химическим воздействиям,
+          сохраняют эксплуатационные свойства более 50 лет.
+        </p>
+
+        <div class="product-specs">
+          <h2>Технические характеристики</h2>
+          <ul>
+            <li>Материал: полиэтилен ПЭ 100</li>
+            <li>SDR: 17</li>
+            <li>Диаметр: от 20 до 1200 мм</li>
+            <li>Рабочее давление: до 10 бар</li>
+            <li>Стандарт: ГОСТ 18599-2001</li>
+          </ul>
         </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Преимущества -->
-     <div class="container">
-        <div class="advantages">
-            <div class="advantage"><span class="icon"><img src="./img/Background1.svg" alt=""></span><p class="advertising-headline">Подарочные сертификаты</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background2.svg" alt=""></span><p class="advertising-headline">Весь товар сертифицирован</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background3.svg" alt=""></span><p class="advertising-headline">30 дней на обмен и возврат</p></div>
-            <div class="advantage"><span class="icon"><img src="./img/Background4.svg" alt=""></span><p class="advertising-headline">Удобная и быстрая доставка</p></div>
-        </div>
-     </div>
 
-    <!-- О компании -->
-    <section class="about">
-        <div class="container">
-            <h2>О компании</h2>
-        <p>Наша компания специализируется на продаже инженерной сантехники, предоставляя клиентам надёжные и современные решения для систем водоснабжения, отопления и канализации.</p>
-        </div>
-    </section>
 
-    <!-- Футер -->
+<!-- Футер -->
     <footer class="custom-footer">
         <div class="container">
             <div class="footer-content">
@@ -336,6 +334,8 @@
       </div>
 
 
-        <script src="./script.js"></script>
-</body>
+
+<script src="./script.js"></script>
+
+      </body>
 </html>
